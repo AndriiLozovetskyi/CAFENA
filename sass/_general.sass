@@ -1,0 +1,641 @@
+@mixin tovar-box
+    height: 110px
+    border: 3px solid #414141
+    margin-bottom: 80px
+    margin-left: 30px
+    position: relative
+    width: 475px
+
+@mixin tovar-befor
+    content: ''
+    display: block
+    position: absolute
+    min-height: 150px
+    min-width: 150px
+    border-radius: 100%
+    top: -20px
+    left: -35px
+@mixin btn
+        display: block
+        background: #232020
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        padding: 8px 20px
+        transition: 1s ease
+        &:hover
+            transition: 1s ease
+            color: black
+            background: none
+            border-color: red
+input
+    font-weight: 400
+    font-size: 14px
+    display: flex
+    align-items: center
+    letter-spacing: 0.04em
+    color: #5C5C5C    
+input::-webkit-calendar-picker-indicator 
+    background: url('../icon/calendar.png') center right no-repeat
+    width: 23px
+    height: 22px   
+    margin-right: -27px
+a
+    text-decoration: none   
+tel
+    color:#8D8D8D
+    display: flex
+    align-items: center
+.promo
+    min-height: 752px
+    position: relative
+    z-index: 0
+    padding-top: 100px
+    &_logo
+        margin-top: -15px
+        margin-left: 30px
+    h1
+        display: block
+        font-family:' ZCOOL XiaoWei'
+        margin-top: 90px
+        font-weight: 400
+        color: #232020
+        font-size: 45px
+        letter-spacing: 0.04em
+        text-align: start
+    &_text
+        margin-top: 33px
+        font-weight: 400
+        font-size: 18px
+        letter-spacing: 0.04em
+        color: #404040
+        text-align: start
+        width:500px
+    &_btn
+        padding: 5px 13px
+        margin-top: 55px
+        margin-right: 24px
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        background: #232020
+        transition: .8s ease
+        border: 1px solid #232020
+        &:hover
+            border: 1px solid #D48A5C
+            color: #000
+            background: none
+            transition: .8s ease
+    &_bg
+        height: 100%
+
+
+.navb
+    background-color: #F7F2EE
+    height: 100%
+.navtop
+    height: 80px
+    position: fixed
+    z-index: 100
+    background-color: #F7F2EE
+    width: 100%
+
+.navigation
+    &_menu
+        display: flex
+        justify-content: space-around
+        padding-top: 30px
+    &_link
+        text-decoration: none
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #000000
+        position: relative
+        &::after
+            position: absolute
+            transition: 1s ease
+            content: ""
+            display: block
+            height: 3px
+            width: 0px
+            background-color: #D48A5C
+            left: 0
+            bottom: -10px
+        &::before
+            position: absolute
+            content: ""
+            display: block
+            height: 3px
+            width: 0px
+            transition: 1s ease
+            background-color: #D48A5C
+            right: 0
+            top: -10px
+        &:hover::before
+            width: 100%
+            transition: 1s ease
+        &:hover::after
+            width: 100%
+            transition: 1s ease
+    &_name
+        list-style: none
+        margin-top: 20px
+
+
+.coffe
+    min-height: 400px
+    padding-top: 115px
+    padding-bottom: 80px
+    &_container
+        display: flex
+        justify-content: space-around
+    &_box
+        margin: 0 auto
+        margin-bottom: 20px
+        position: relative
+        transition: 1s ease
+        max-width: 350px
+        max-height: 256px
+        &::before
+            content: ""
+            background: url("../icon/img_head.png")
+            width: 199px
+            height: 81px
+            position: absolute
+            top: 0%
+            left: 0%
+
+        &:hover
+            transition: 1s ease
+            box-shadow: -13px 15px #D48A5C
+            transform: translate3d(15px,-13px,0px)
+    &_img
+        max-height: 256px
+    &_counter
+        position: absolute
+        z-index: 3
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        margin: 16px 16px
+        font-family:' ZCOOL XiaoWei'
+    &_name
+        position: absolute
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        color: #232020
+        z-index: 3
+        margin: 34px 16px
+        font-family:' ZCOOL XiaoWei'
+    &_desc
+        position: absolute
+        z-index: 3
+        font-weight: 400
+        font-size: 10px
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        padding-top: 200px
+        padding-left: 16px
+.more
+    min-height: 729px
+    background: url('../image/second_bg.png') center (center/cover) no-repeat
+    display: flex
+    align-items: center
+    justify-content: center
+    &_header
+        font-weight: 400
+        font-size: 55px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #000000
+        font-family:' ZCOOL XiaoWei'
+    &_text
+        margin-top: 10px
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #141313
+    &_btn
+        @include btn
+        margin: 0 auto
+        margin-top: 20px
+.head
+    background: #232020
+    font-weight: 400
+    font-size: 16px
+    letter-spacing: 0.04em
+    color: #FFFFFF  
+    height: 35px
+    width: 200px
+    display: flex
+    align-items: center
+    justify-content: center   
+    margin: 0 auto
+    margin-bottom: 35px
+
+.head-text
+    font-weight: 400
+    font-size: 55px
+    text-align: center
+    letter-spacing: 0.04em
+    color: #232020
+    font-family:' ZCOOL XiaoWei'
+.two
+    margin-top: 25px
+    font-size: 14px
+  
+.product
+    min-height: 900px
+    padding-top: 140px
+    &_container
+        margin-top: 48px
+        display: flex
+        justify-content: center
+    &_box1
+        @include tovar-box
+        &::before
+            @include tovar-befor
+            background: url('../image/popular_product1.png') center (center/cover) no-repeat
+    &_box2
+        @include tovar-box
+        &::before
+            @include tovar-befor
+            background: url('../image/popular_product2.png') center (center/cover) no-repeat
+    &_box3
+        @include tovar-box
+        &::before
+            @include tovar-befor
+            background: url('../image/popular_product3.png') center (center/cover) no-repeat
+    &_head
+        font-weight: 400
+        font-size: 30px
+        display: flex
+        justify-content: end
+        letter-spacing: 0.04em
+        color: #232020
+        margin-top: 30px
+        margin-right: 20px
+        font-family:' ZCOOL XiaoWei'
+    &_price
+        font-style: normal
+        font-weight: 600
+        font-size: 20px
+        display: flex
+        justify-content: end
+        letter-spacing: 0.04em
+        color: #D48A5C
+        margin-right: 20px
+
+.machine
+    min-height: 674px
+    display: flex
+    justify-content: center
+    background-color: #fff
+    padding-bottom: 37px
+    &_header
+        margin-top: 140px
+        font-family: 'ZCOOL XiaoWei'
+        font-style: normal
+        font-weight: 400
+        font-size: 55px
+        letter-spacing: 0.04em
+        color: #1C1A1A
+    &_subheader
+        font-weight: 400
+        font-size: 16px
+        letter-spacing: 0.04em
+        color: #6F6F6F
+    &_text
+        margin-top: 10px
+        font-weight: 400
+        font-size: 16px
+        letter-spacing: 0.04em
+        color: #141313
+    &_btn
+        @include btn
+        margin-top: 34px
+    &_bg
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 366px
+        height: 600px
+        margin-top: 37px
+        border-radius: 50%
+        box-shadow: -13px 0px 0px  black
+        background: linear-gradient(175.44deg, #7D4934 11.34%, #000000 69.68%)
+    &_img
+        width: 313px
+        height: 414px
+
+.best
+    min-height: 700px
+    padding-bottom: 95px
+    &_container
+        display: flex
+        justify-content: center
+    &_header
+        display: flex
+        margin-top: 100px
+        justify-content: center
+    &_box
+        display: flex
+        justify-content: start
+        width: 100%
+    &_box2
+        display: flex
+        justify-content: end
+    &_card
+        width: 350px
+        height: 454px
+        background: #FFFFFF
+        border: 1px solid #FFFFFF  
+        margin:0 auto
+        margin-top: 50px
+        transition: 1s ease
+        &:hover
+            transition: 1s ease
+            transform: scale3d(1.1,1.1,1.1)
+    &_foto
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 303px
+        height: 267px
+        background: #13131A
+        margin: 23px
+        padding-left: 20px
+    &_raiting
+        margin-top: 30px
+        margin-left: 23px
+    &_price
+        font-weight: 600
+        font-size: 16px
+        letter-spacing: 0.04em
+        color: #1C1A1A
+        margin-left: 23px
+        margin-top: 13px
+    &_name
+        font-family: 'ZCOOL XiaoWei'
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        letter-spacing: 0.04em
+        color: #1C1A1A
+        margin-left: 23px
+        margin-top: 17px
+.rait
+        font-weight: 600
+        font-size: 16px
+        letter-spacing: 0.04em
+        color: #EAB665
+.customer
+    min-height: 480px
+    padding-bottom: 85px
+    &_text
+        font-weight: 400
+        font-size: 20px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #5C5C5C
+        max-width: 760px
+        display: block
+        margin: 0 auto
+        margin-top: 30px
+    &_human
+        display: flex
+        justify-content: center
+        margin-top: 40px
+    &_img
+        border-radius: 100%
+    &_name
+        margin-top: 10px
+        font-family: 'ZCOOL XiaoWei'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #1C1A1A
+.carousel-control-next
+    border-radius: 100%
+    width: 50px
+    height: 50px
+    border: solid 2px #D48A5C
+    margin-top: 100px
+.carousel-control-prev
+    border-radius: 100%
+    width: 50px
+    height: 50px
+    border: solid 2px #D48A5C
+    margin-top: 100px
+.carousel-control-prev-icon
+    background: url('../icon/prev.png') center no-repeat
+.carousel-control-next-icon
+    background: url('../icon/next.png') center no-repeat
+
+.booking
+    height: 392px  
+    margin-bottom: 95px
+    padding-bottom: 95px
+.card
+    margin: 0 auto
+    max-width: 1100px
+    &_img
+        height: 100%
+    &_header
+        font-family: 'ZCOOL XiaoWei'
+        font-style: normal
+        font-weight: 400
+        font-size: 29px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #1C1A1A
+        margin-top: 10px
+    &_form 
+        margin-top: 20px
+        display: flex
+        align-items: center
+        flex-direction: column
+    &_el
+        display: block
+        width: min(100% - 15px,362px)
+        height: min(5vw,50px)
+        background-color: #F4F1EE
+        margin-bottom: 10px
+        border: none
+        padding: 17px 40px 
+        &:nth-child(1)
+            background: url('../icon/phone_book.png')min(100% - 15px,328px)  no-repeat
+            background-color: #F4F1EE
+        &:nth-child(2)
+            background-color: #F4F1EE
+        &:nth-child(3)
+            background: url('../icon/mail.png') min(100% - 15px,328px) no-repeat
+            background-color: #F4F1EE   
+    &_title
+        margin-top: 30px
+        font-weight: 400
+        font-size: 14px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #D58A5C
+    &_btn
+        @include btn
+        width: 144px
+        height: 30px
+        font-size: 14px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0
+.news
+    min-height: 708px
+    padding-bottom: 97px
+    &_card
+        display: flex
+        justify-content: center
+.cardn
+    margin: 0 auto
+    margin-top: 60px
+    max-height: 454px
+    max-width: 350px
+    background: #1C1A1A
+    &_color
+        color: #EAB665   
+    &_location
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        color: #fff
+        margin-top: 19px
+        margin-left: 25px
+    &_head
+        margin-top: 9px
+        margin-left: 25px
+        font-family: 'ZCOOL XiaoWei'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        max-width: 251px
+    &_more
+        width: 120px
+        margin-top: 9px
+        margin-left: 25px
+        padding-bottom:20px
+        transition: 1s ease
+        transform: translateX(0px)
+        &:hover
+            transition: 1s ease
+            transform: translateX(20px)
+    &_link
+        text-decoration: none
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        color: #EAB665
+.foot
+    min-height: 438px
+    background-color: #fff
+    position: relative
+    border-top: solid 1px #EAB665
+    border-bottom: solid 1px #EAB665
+    &_box
+        margin: 0 auto
+    &_contact
+        display: flex
+        justify-content: center
+        align-items: center
+    &_top
+        color: #EAB665  
+    &_go-top
+        position: absolute
+        font-size: 30px
+        color: #EAB665
+        width: 51px
+        height: 51px
+        border: solid 2px #EAB665
+        border-radius: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: -26px
+        left: 50%
+        background-color: #fff
+    &_contact
+        margin-top: 123px
+    &_img
+        margin-right: 10px
+    &_text
+        font-weight: 600
+        font-size: 14px
+        display: flex
+        align-items: center
+        letter-spacing: 0.04em
+        color: #1C1A1A
+        margin-right: 5px
+    &_adr
+        color:#8D8D8D
+        display: flex
+        align-items: center
+    &_tel
+        // width: min(100% - 15px,350px)
+        width: 350px
+        height: 40px
+        border: none
+        background: url('../icon/telegram.png') min(100% - 15px,350px) no-repeat
+        background-color: #F2EAE2
+        padding:17px 30px 
+    &_logo
+        margin-top: 70px
+        margin-left: 90px
+    &_second
+        margin: 0 auto
+        padding-bottom: 110px
+    &_descr
+        margin-left: 90px
+        margin-top: 9px
+        font-weight: 400
+        font-size: 14px
+        line-height: 26px
+        display: flex
+        align-items: center
+        letter-spacing: 0.04em
+        color: #848484
+        width: 444px
+        margin-bottom: 10px
+    &_icon
+        width: 24px
+        height: 22px
+    &_social
+        display: flex
+        justify-content: center
+        margin-top: 9px
+    &_link
+        margin-left: 22px
+        border: 1px solid #6D6D6D
+        border-radius: 4px
+        padding: 13px
+.company
+    background: #fff
+    min-height: 60px
+    &_name
+        font-weight: 400
+        font-size: 14px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #979797
+        padding-top: 18px

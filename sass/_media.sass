@@ -1,0 +1,214 @@
+@media (max-width: 1200px)
+    .coffe
+        &_box
+            max-width: 320px
+            max-height: 246px
+        &_img
+            height: 230px
+    .product
+        &_box1,&_box2,&_box3
+            margin: 0 auto
+            margin-bottom: 80px
+    .best
+        &_card
+            width: 300px
+        &_foto
+            width: 250px
+    .head-text
+        font-size: 48px
+    .promo
+        &_bg
+            width: 400px
+    .machine
+        &_bg
+
+            width: 320px
+            height: 590px
+        &_img
+            width: 290px
+            height: 400px
+    .cardn
+        &_img
+            width: 290px
+
+@media  ( max-width: 992px )
+    .navbar-toggler
+        position: absolute
+        left:90%
+    .navigation
+        &_menu
+            display: inline
+        &_name
+            margin-top: 30px
+    .coffe
+        &_box
+            width: 100%
+            height: 100%
+        &_img
+            height: 300px
+    .best
+        &_card
+            width: 350px
+        &_foto
+            width: 303px
+    .promo
+        &_bg
+            width: 300px
+            padding-top: 100px
+            display: block
+            margin: 0 auto
+    .machine
+        &_bg
+            display: block
+            margin: 0 auto
+            margin-top: 30px
+        &_img
+            margin-top: 100px
+            width: 280px
+            height: 350px
+            margin-left: 20px
+    .customer
+        &_text
+            font-size: 14px
+            display: block
+            width: 500px
+    .cardn
+        &_img
+            width: 350px
+
+@media  (max-width: 768px)
+    .more
+        &_header
+            font-size: 48px
+    .head-text
+        font-size: 34px
+    .two
+        margin-top: 10px
+    .carousel-control-next
+        margin-top: 180px
+    .carousel-control-prev
+        margin-top: 180px
+    .news
+        padding-top: 250px
+
+@media  ( max-width: 576px  )
+    .foot
+        &_descr
+            margin: 0 auto
+        &_logo
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+    .carousel-control-next
+        margin-top: 160px
+        width: 30px
+        height: 30px
+        border: solid 2px #D48A5C
+    .carousel-control-prev
+        margin-top: 160px
+        width: 30px
+        height: 30px
+        border: solid 2px #D48A5C
+
+
+@media (min-width: 321px) and (max-width: 575px)
+    .navbar-toggler
+        position: absolute
+        left:82%
+    .promo
+        h1
+            text-align: center
+            font-size: 28px
+        &_text
+            font-size: 14px
+            width: 300px
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 30px
+        &_bg
+            width: 290px
+        &_text
+            text-align: center
+            margin: 20px auto
+    .coffe
+        &_box
+            width: 200px
+            height: 180px
+            margin: 20px 15%
+        &_img
+            height: 180px
+        &_desc
+            padding-top: 120px
+    @mixin tovar-befor
+        content: ''
+        display: block
+        position: absolute
+        min-height: 100px
+        min-width: 100px
+        border-radius: 100%
+        top: -20px
+        left: -20px
+    .more
+        &_header
+            font-size: 38px
+        &_text
+            font-size: 16px
+    .product
+        &_box1,&_box2,&_box3
+            width: 260px
+            height: 70px
+            &::before
+                @include tovar-befor
+        &_head
+            font-size: 12px
+            margin-top: 10px
+            margin-right: 10px
+        &_price
+            font-size: 10px
+            margin-top: 10px
+            margin-right: 10px
+    .machine
+        &_header
+            font-size: 40px
+        &_subheader
+            margin-top: 20px
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 10px
+        &_bg
+            width: 280px
+            height: 500px
+        &_img
+            height: 300px
+            width: 250px
+    .best
+        &_box
+            .head-text
+                font-size: 28px
+        &_box2
+            margin: auto 0
+        &_card
+            width: 280px
+        &_foto
+            width: 230px
+        &_name
+            font-size: 20px
+    .customer
+        &_text
+            max-width: 280px
+    .cardn
+        max-width: 290px
+        &_img
+            width: 290px
+    .foot
+        &_tel
+            width: 290px
+            margin-bottom: 20px
+        &_descr
+            width: 290px
+            margin-bottom: 20px
+
+
+    
